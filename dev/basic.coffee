@@ -7,7 +7,7 @@ module.exports = createView
   structure: template 1, """
     <div class="container" style="background-color:lightgrey;">
     <p #text=within container></p>
-    <a href="https://github.com/cerijs/ceri-portal/blob/master/dev/basic.vue" #text=source></a>
+    <a href="https://github.com/ceri-comps/ceri-portal/blob/master/dev/basic.vue" #text=source></a>
     <br/><br/>
     <button @click="togglePortal" #text="toggle portal to body"></button>
     <ce-portal #ref="portal1" #if="toggled">
