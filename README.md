@@ -1,6 +1,10 @@
 # ceri-portal
 
 teleports the content to another location in the dom.
+Features:
+- plain JS - no dependencies
+- 14kB unzipped - even smaller when using multiple ceri components
+- use in your markup - easy to reason about
 
 ### [Demo](https://ceri-comps.github.io/ceri-portal)
 
