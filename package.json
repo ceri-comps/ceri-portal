@@ -14,8 +14,7 @@
     "url": "git://github.com/ceri-comps/ceri-portal"
   },
   "files": [
-    "portal.js",
-    "bundle.js"
+    "*.js"
   ],
   "engines": {
     "node": "*"
