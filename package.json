@@ -20,15 +20,15 @@
     "node": "*"
   },
   "dependencies": {
-    "ceri": "^1.0.19"
+    "ceri": "^1.0.24"
   },
   "devDependencies": {
     "coffee-loader": "^0.7.3",
     "coffee-script": "^1.12.6",
     "gh-pages": "^1.0.0",
     "script-runner": "^0.1.7",
-    "ceri-dev-server": "^1.0.7",
-    "ceri-compiler": "^1.1.1"
+    "ceri-dev-server": "^1.0.9",
+    "ceri-compiler": "^1.1.2"
   },
   "keywords": [
     "portal",

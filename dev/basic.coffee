@@ -23,23 +23,20 @@ module.exports = createView
   data: ->
     toggled: true
 
+  tests: portal: ->
+    before (done) -> setTimeout done, 100
+    it "should default to document.body", =>
+      @p1.parentNode.should.equal document.body
 
-  tests: (el) ->
-    describe "portal", ->
-      after ->
-        el.remove()
-      it "should default to document.body", ->
-        el.p1.parentNode.should.equal document.body
+    it "should work with selector string", =>
+      @p2.parentNode.should.equal @c2
 
-      it "should work with selector string", ->
-        el.p2.parentNode.should.equal el.c2
-
-      it "should work #if", (done) ->
-        el.p1.parentNode.should.equal document.body
-        el.toggled = false
-        el.$nextTick ->
-          should.not.exist el.p1.parentNode
-          el.toggled = true
-          el.$nextTick ->
-            el.p1.parentNode.should.equal document.body
-            done()
+    it "should work #if", (done) =>
+      @p1.parentNode.should.equal document.body
+      @toggled = false
+      @$nextTick =>
+        should.not.exist @p1.parentNode
+        @toggled = true
+        @$nextTick =>
+          @p1.parentNode.should.equal document.body
+          done()
